@@ -1,0 +1,14 @@
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Example.exe.config
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Example.exe
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Example.pdb
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Apache.NMS.ActiveMQ.dll
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Apache.NMS.dll
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Jayrock.Json.dll
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\MongoDB.dll
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\MongoDB.GridFS.dll
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\MongoDbConnector.dll
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\MongoDbConnector.pdb
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\bin\Debug\Jayrock.Json.pdb
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\obj\Debug\Example.csprojResolveAssemblyReference.cache
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\obj\Debug\Example.exe
+C:\projects\Elements\MongoDbConnector\MongoDbConnector\Example\obj\Debug\Example.pdb
