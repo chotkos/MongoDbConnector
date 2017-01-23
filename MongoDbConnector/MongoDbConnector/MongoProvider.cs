@@ -9,11 +9,23 @@ using MongoDB.Configuration;
 
 namespace MongoDbConnector
 {
-    public class MongoProvider
+    public class MongoProvider:IDisposable
     {
         private MongoConfiguration configuration;
         private Mongo mongoContext;
+        private string databaseName = "";
         public IMongoDatabase Context { get; set; }
+
+        public MongoProvider(string databaseName)
+        {
+            this.databaseName = databaseName; 
+            this.configuration = MongoConfiguration.Default;            
+
+            mongoContext = new Mongo();
+            mongoContext.Connect();
+            this.Context = mongoContext.GetDatabase(databaseName);
+        }
+
         /// <summary>
         /// Creates new MongoProvider
         /// </summary>
@@ -21,15 +33,20 @@ namespace MongoDbConnector
         /// <param name="databaseName">Name of database in Mongo which you would like to connect</param>
         public MongoProvider(MongoConfiguration configuration, string databaseName)
         {
-            databaseName = databaseName;
+            this.databaseName = databaseName;
             if (configuration==null)
             {
-                configuration = MongoConfiguration.Default;
+                this.configuration = MongoConfiguration.Default;
             }
 
             mongoContext = new Mongo();
             mongoContext.Connect();
             this.Context = mongoContext.GetDatabase(databaseName); 
+        }
+
+        public void Dispose()
+        {
+            this.mongoContext.Disconnect();
         }
     }
 }
